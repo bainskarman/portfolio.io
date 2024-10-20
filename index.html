@@ -1,22 +1,50 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-    <title>Karman Singh Bains</title>
+    <title>Karman Singh Bains Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #2a2a2a;
+        }
         .category {
             cursor: pointer;
-            padding: 10px;
-            background: #f4f4f4;
+            padding: 15px;
+            background: #eaeaea;
             margin: 10px 0;
             border: 1px solid #ccc;
+            font-weight: bold;
+            color: #444;
         }
         .projects {
             display: none;
             margin-left: 20px;
+        }
+        .project {
+            margin: 15px 0;
+        }
+        .project img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .experience, .publication {
+            padding: 15px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .experience img, .publication img {
+            float: left;
+            margin-right: 20px;
         }
     </style>
     <script>
@@ -49,85 +77,107 @@
         <section id="banner">
             <div class="inner">
                 <h2>Karman Singh Bains Portfolio</h2>
-                <p>Data Scientist <a href="https://www.linkedin.com/in/bainskarman/">@bainskarman</a></p>
-                <p>Skills: Data Analysis, NLP, Machine Learning, Python, SQL, Power BI, Tablue, MS Excel</p>
+                <p>Data Scientist | <a href="https://www.linkedin.com/in/bainskarman/">LinkedIn</a></p>
+                <p>Skills: Data Analysis, NLP, Machine Learning, Python, SQL, Power BI, Tableau, MS Excel</p>
             </div>
         </section>
 
-        <!-- Project Categories -->
-        <section id="wrapper">
+        <!-- Projects Section -->
+        <section id="projects">
             <h2>Projects</h2>
 
             <div class="category" onclick="toggleProjects('mlDlProjects')">ML/DL Projects</div>
             <div id="mlDlProjects" class="projects">
-                <section class="wrapper spotlight style1">
-                    <div class="inner">
-                        <a href="https://creditchecker.streamlit.app/" class="image"><img src="images/credit.jpg" height="200" width="250"/></a>
-                        <div class="content">
-                            <h2 class="major">Credit Check</h2>
-                            <p>A Streamlit application for predicting credit scores based on user-provided information. Three profiles ("Poor," "Standard," "Good") are available for demonstration.</p>
-                            <a href="https://github.com/bainskarman/projects/tree/main/Credit_Classification_End_to_End" class="special">Learn More</a>
-                        </div>
-                    </div>
-                </section>
-                <section class="wrapper spotlight style1">
-                    <div class="inner">
-                        <a href="https://loanriskanalysis.streamlit.app/" class="image"><img src="images/loan.jpg" alt="" height="200" width="200" /></a>
-                        <div class="content">
-                            <h2 class="major">Loan Risk Analysis</h2>
-                            <p>This Streamlit application predicts the probability of loan default based on user-provided information.</p>
-                            <a href="https://github.com/bainskarman/projects/tree/main/Loan_Default_Probability_End_to_End" class="special">Learn more</a>
-                        </div>
-                    </div>
-                </section>
-                <!-- Add more ML/DL projects here -->
+                <div class="project">
+                    <img src="images/credit.jpg" height="200" width="250" alt="Credit Check" />
+                    <h3>Credit Analysis</h3>
+                    <p>A Streamlit app to predict credit scores using user information. Available profiles: Poor, Standard, Good.</p>
+                    <a href="https://github.com/bainskarman/projects/tree/main/Credit_Classification_End_to_End" class="special">Learn More</a>
+                </div>
+                <div class="project">
+                    <img src="images/loan.jpg" height="200" width="200" alt="Loan Risk Analysis" />
+                    <h3>Loan Default Analysis</h3>
+                    <p>Predicts loan default probabilities based on user inputs using ML models.</p>
+                    <a href="https://github.com/bainskarman/projects/tree/main/Loan_Default_Probability_End_to_End" class="special">Learn More</a>
+                </div>
             </div>
 
-            <div class="category" onclick="toggleProjects('visualizationProjects')">Visualization Projects</div>
+            <div class="category" onclick="toggleProjects('visualizationProjects')">Data Visualization Projects</div>
             <div id="visualizationProjects" class="projects">
-                <section class="wrapper spotlight style1">
-                    <div class="inner">
-                        <a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="image"><img src="images/powerbi.png" alt="" /></a>
-                        <div class="content">
-                            <h2 class="major">Data Professional Survey Analysis using Power BI</h2>
-                            <a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="special">Learn more</a>
-                        </div>
-                    </div>
-                </section>
-                <!-- Add more visualization projects here -->
-            </div>
-
-            <div class="category" onclick="toggleProjects('generativeAIProjects')">Generative AI Projects</div>
-            <div id="generativeAIProjects" class="projects">
-                <!-- Add generative AI projects here -->
+                <div class="project">
+                    <img src="images/ttc.png" height="200" width="200" alt="TTC Analysis" />
+                    <h3>TTC Delay Analysis</h3>
+                    <p>Analysis and prediction of TTC bus delays. Streamlit app with visual insights.</p>
+                    <a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" class="special">Learn More</a>
+                </div>
+                <div class="project">
+                    <img src="images/powerbi.png" alt="PowerBI Survey Analysis" />
+                    <h3>Survey Analysis and Sales Report</h3>
+                    <p>Analyzing survey data using Power BI to extract insights and visualize sales performance.</p>
+                    <a href="https://app.powerbi.com/links/cEiqieuETu" class="special">Learn More</a>
+                </div>
             </div>
 
             <div class="category" onclick="toggleProjects('nlpProjects')">NLP Projects</div>
             <div id="nlpProjects" class="projects">
-                <section class="wrapper spotlight style1">
-                    <div class="inner">
-                        <a href="https://ttcdelay.streamlit.app/" class="image"><img src="images/ttc.png" alt="" /></a>
-                        <div class="content">
-                            <h2 class="major">TTC Delay Analysis and Forecasting</h2>
-                            <p>The TTC Delay Analysis is a Streamlit application that shows analysis and forecasts the expected delay for TTC buses.</p>
-                            <a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" class="special">Learn more</a>
-                        </div>
-                    </div>
-                </section>
-                <!-- Add more NLP projects here -->
+                <div class="project">
+                    <img src="images/ttc.png" height="200" width="200" alt="Wikipedia Classification" />
+                    <h3>Wikipedia Articles Classification</h3>
+                    <p>Classifies Wikipedia articles into three levels using LSTM with over 200+ unique classes. 88% accuracy.</p>
+                    <a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" class="special">Learn More</a>
+                </div>
+                <div class="project">
+                    <h3>YouTube Sentiment Analysis</h3>
+                    <p>A comprehensive sentiment analysis tool for YouTube video comments using NLP models.</p>
+                    <a href="https://github.com/bainskarman/projects" class="special">Learn More</a>
+                </div>
+            </div>
+
+            <div class="category" onclick="toggleProjects('genAiProjects')">Generative AI Projects</div>
+            <div id="genAiProjects" class="projects">
+                <div class="project">
+                    <h3>ATS Resume Screening with AI</h3>
+                    <p>Automates ATS score evaluation using BERT and provides a detailed review with NVIDIA Llama 3.1.</p>
+                    <a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="special">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience">
+                <img src="images/aenix.png" height="80" alt="AENIX Logo" />
+                <h3>Data Analyst at AENIX (2021-2022)</h3>
+            </div>
+            <div class="experience">
+                <img src="images/iata.png" height="80" alt="IATA Logo" />
+                <h3>Data Scientist at IATA (2024-Present)</h3>
+            </div>
+        </section>
+
+        <!-- Publication Section -->
+        <section id="publication">
+            <h2>Publication</h2>
+            <div class="publication">
+                <img src="images/alzheimer.jpg" height="80" alt="Alzheimer" />
+                <h3>Alzheimer Diagnosis from MRI</h3>
+                <p>Using deep learning on OASIS data with 92% accuracy. Published in STEM Fellowship.</p>
+                <a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj-2023-007" class="special">Read Publication</a>
+                <a href="https://github.com/bainskarman/Alzheimer" class="special">View Code</a>
             </div>
         </section>
 
         <footer id="footer">
             <div class="inner">
                 <ul class="contact">
-                    <li class="icon solid fa-home">Toronto, ON<br /> Canada</li>
+                    <li class="icon solid fa-home">Toronto, ON, Canada</li>
                     <li class="icon solid fa-envelope"><a href="mailto:bsinghkarman@gmail.com">bsinghkarman@gmail.com</a></li>
-                    <li class="icon brands fa-github"><a href="https://github.com/bainskarman">bainskarman</a></li>
-                    <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/bainskarman/">@bainskarman</a></li>
+                    <li class="icon brands fa-github"><a href="https://github.com/bainskarman">GitHub</a></li>
+                    <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/bainskarman/">LinkedIn</a></li>
                 </ul>
                 <ul class="copyright">
-                    <li>&copy; Karman Singh Bains All rights reserved.</li>
+                    <li>&copy; 2024 Karman Singh Bains. All rights reserved.</li>
                 </ul>
             </div>
         </footer>
