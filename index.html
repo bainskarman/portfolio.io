@@ -1,212 +1,144 @@
 <!DOCTYPE HTML>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Karman Singh Bains</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Karman Singh Bains</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .category {
+            cursor: pointer;
+            padding: 10px;
+            background: #f4f4f4;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .projects {
+            display: none;
+            margin-left: 20px;
+        }
+    </style>
+    <script>
+        function toggleProjects(categoryId) {
+            const projects = document.getElementById(categoryId);
+            if (projects.style.display === "none" || projects.style.display === "") {
+                projects.style.display = "block";
+            } else {
+                projects.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+        <header id="header" class="alt">
+            <h1><a href="index.html">Karman Singh Bains</a></h1>
+        </header>
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+        <nav id="menu">
+            <div class="inner">
+                <h2>Menu</h2>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                <a href="#" class="close">Close</a>
+            </div>
+        </nav>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Karman Singh Bains</a></h1>
-						<!-- <nav>
-							<a href="#menu">Menu</a> 
-						</nav> -->
-					</header>
+        <section id="banner">
+            <div class="inner">
+                <h2>Karman Singh Bains Portfolio</h2>
+                <p>Data Scientist <a href="https://www.linkedin.com/in/bainskarman/">@bainskarman</a></p>
+                <p>Skills: Data Analysis, NLP, Machine Learning, Python, SQL, Power BI, Tablue, MS Excel</p>
+            </div>
+        </section>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<!-- <li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li> -->
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+        <!-- Project Categories -->
+        <section id="wrapper">
+            <h2>Projects</h2>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>Karman Singh Bains Portfolio</h2>
-							<p>Data Analyst / Data Scientist 
-								<a href="https://www.linkedin.com/in/bainskarman/">@bainskarman</a>
-							</p>
-							<p>Skills: Data Analysis, Machine Learning, Python, SQL, Power BI, Tablue, MS Excel</p>
-						</div>
-					</section>
+            <div class="category" onclick="toggleProjects('mlDlProjects')">ML/DL Projects</div>
+            <div id="mlDlProjects" class="projects">
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://creditchecker.streamlit.app/" class="image"><img src="images/credit.jpg" height="200" width="250"/></a>
+                        <div class="content">
+                            <h2 class="major">Credit Check</h2>
+                            <p>A Streamlit application for predicting credit scores based on user-provided information. Three profiles ("Poor," "Standard," "Good") are available for demonstration.</p>
+                            <a href="https://github.com/bainskarman/projects/tree/main/Credit_Classification_End_to_End" class="special">Learn More</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://loanriskanalysis.streamlit.app/" class="image"><img src="images/loan.jpg" alt="" height="200" width="200" /></a>
+                        <div class="content">
+                            <h2 class="major">Loan Risk Analysis</h2>
+                            <p>This Streamlit application predicts the probability of loan default based on user-provided information.</p>
+                            <a href="https://github.com/bainskarman/projects/tree/main/Loan_Default_Probability_End_to_End" class="special">Learn more</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Add more ML/DL projects here -->
+            </div>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
-						<!-- One -->
-						<section id="one" class="wrapper spotlight style1">
-							<div class="inner">
-								<a href="https://creditchecker.streamlit.app/" class="image"><img src="images/credit.jpg" height="200" width="250"/></a>
-								<div class="content">
-									<h2 class="major">Credit Check</h2>
-									<p> A Streamlit application for predicting credit scores based on user-provided information. Three profiles ("Poor," "Standard," "Good") are available for demonstration.
-									</p>
-									<a href="https://github.com/bainskarman/projects/tree/main/Credit_Classification_End_to_End" class="special">Learn More</a>
-								</div>
-							</div>
-						</section>
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="https://github.com/bainskarman/projects/tree/main/Team_Winning_Chances_End_to_End" class="image"><img src="images/cricket.jpg" height="200" width="250"/></a>
-									<div class="content">
-										<h2 class="major">Sports Win Probability</h2>
-										<p>A Streamlit application for predicting cricket match outcomes based on user-selected teams, host city, target, score, overs completed, and wickets out.</p>
-										<a href="https://github.com/bainskarman/projects/tree/main/Team_Winning_Chances_End_to_End" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+            <div class="category" onclick="toggleProjects('visualizationProjects')">Visualization Projects</div>
+            <div id="visualizationProjects" class="projects">
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="image"><img src="images/powerbi.png" alt="" /></a>
+                        <div class="content">
+                            <h2 class="major">Data Professional Survey Analysis using Power BI</h2>
+                            <a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="special">Learn more</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Add more visualization projects here -->
+            </div>
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="https://loanriskanalysis.streamlit.app/" class="image"><img src="images/loan.jpg" alt="" height="200" width="200" /></a>
-									<div class="content">
-										<h2 class="major">Loan Risk Analysis</h2>
-										<p>This Streamlit application predicts the probability of loan default based on user-provided information such as education level, loan purpose, employment type, loan amount, loan term, credit score, monthly income, interest rate, and months employed. It uses a pre-trained machine learning model.</p>
-										<a href="https://github.com/bainskarman/projects/tree/main/Loan_Default_Probability_End_to_End"class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+            <div class="category" onclick="toggleProjects('generativeAIProjects')">Generative AI Projects</div>
+            <div id="generativeAIProjects" class="projects">
+                <!-- Add generative AI projects here -->
+            </div>
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="https://ttcdelay.streamlit.app/" class="image"><img src="images/ttc.png" alt="" /></a>
-									<div class="content">
-										<h2 class="major">TTC Delay Analysis and Forcasting</h2>
-										<p>The TTC Delay Analysis is a Streamlit application that show analysis and forcast the expected delay for TTC (Toronto Transit Commission) buses based on current date, time, location, and selected route. The application utilizes pre-trained machine learning models for delay prediction.</p>
-										<a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
-							<!-- four -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="https://github.com/bainskarman/Alzheimer-" class="image"><img src="images/alzheimer.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Alzheimer's Diagnostic from MRI Scans</h2>
-										<p>The aim of the project is to detect Alzheimer's disease at early stage using OASIS brain data set.
-											 This project involves using implementing machine learning techniques and exploring different algorithms and methods to accurately detect the disease through the given data.
-											  This model will detect change of structure is specific part of brain and abnormalities that leads to Alzheimer's disease.</p>
-										<a href="https://github.com/bainskarman/Alzheimer-" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
-							<section id="four" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="https://ubercostestimation.streamlit.app/" class="image"><img src="images/uber.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Uber Fare Estimation App</h2>
-										<p>A Streamlit application for estimating Uber ride fares based on user-provided pickup and dropoff coordinates, passenger count, and the current date and time.</p>
-										<a href="https://github.com/bainskarman/projects/tree/main/Uber_Fare_End_to_End" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+            <div class="category" onclick="toggleProjects('nlpProjects')">NLP Projects</div>
+            <div id="nlpProjects" class="projects">
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://ttcdelay.streamlit.app/" class="image"><img src="images/ttc.png" alt="" /></a>
+                        <div class="content">
+                            <h2 class="major">TTC Delay Analysis and Forecasting</h2>
+                            <p>The TTC Delay Analysis is a Streamlit application that shows analysis and forecasts the expected delay for TTC buses.</p>
+                            <a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" class="special">Learn more</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Add more NLP projects here -->
+            </div>
+        </section>
 
-						<!-- one -->
-							<section id="five" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Power BI Projects</h2>
-									<p></p>
-									<section class="features">
-										<article>
-											<a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="image"><img src="images/powerbi.png" alt="" /></a>
-											<h3 class="major">Data Professional Survey Analysis using Power BI</h3>
-											<p></p>
-											<a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="special">Learn more</a>
-										</article> 
-										 <article>
-											<a href="https://app.powerbi.com/view?r=eyJrIjoiOTg4ODViNzItMDczYi00NTMyLTgyM2MtY2I2OGYwZGZlMmQ5IiwidCI6ImI2NDE3Y2QwLTFmNzMtNDQ3MS05YTM5LTIwOTUzODIyYTM0YSIsImMiOjN9" class="image"><img src="images/sales.png" alt="" /></a>
-											<h3 class="major">Sales Report with Power BI and SQL</h3>
-											<p></p>
-											<a href="https://app.powerbi.com/view?r=eyJrIjoiOTg4ODViNzItMDczYi00NTMyLTgyM2MtY2I2OGYwZGZlMmQ5IiwidCI6ImI2NDE3Y2QwLTFmNzMtNDQ3MS05YTM5LTIwOTUzODIyYTM0YSIsImMiOjN9" class="special">Learn more</a>
-										</article>
-										<!-- <article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section> -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="contact">
+                    <li class="icon solid fa-home">Toronto, ON<br /> Canada</li>
+                    <li class="icon solid fa-envelope"><a href="mailto:bsinghkarman@gmail.com">bsinghkarman@gmail.com</a></li>
+                    <li class="icon brands fa-github"><a href="https://github.com/bainskarman">bainskarman</a></li>
+                    <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/bainskarman/">@bainskarman</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; Karman Singh Bains All rights reserved.</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 
-					</section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<!-- <h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form> -->
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Toronto, ON</br> Canada</li>
-								<!-- <li class="icon solid fa-phone">(000) 000-0000</li> -->
-								<li class="icon solid fa-envelope"><a href="mailto: bsinghkarman@gmail.com">bsinghkarman@gmail.com</a></li>
-								<li class="icon brands fa-github"><a href="https://github.com/bainskarman">bainskarman</a></li>
-								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/bainskarman/">@bainskarman</a></li>
-								<!-- <li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/jagpreet.singh.54390">Jagpreet Singh</a></li> -->
-								<!-- <li class="icon brands fa-instagram"><a href="https://www.instagram.com/jagpreet_singh_08/">Jagpreet Singh</a></li> -->
-							</ul>
-							<ul class="copyright">
-								<li>&copy;Karman Singh Bains All rights reserved.</li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
