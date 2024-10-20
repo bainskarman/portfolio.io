@@ -1,50 +1,61 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
 <head>
-    <title>Karman Singh Bains Portfolio</title>
+    <title>Karman Singh Bains</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            background-color: #f9f9f9;
+            background-color: #333; /* Greyish background */
+            color: #f4f4f4; /* Light color for better visibility */
+            font-family: 'Arial', sans-serif;
         }
-        h1, h2, h3 {
-            color: #2a2a2a;
+        h1, h2 {
+            color: #fff; /* White headings for visibility */
         }
         .category {
             cursor: pointer;
             padding: 15px;
-            background: #eaeaea;
+            background: #444; /* Slightly darker grey for contrast */
             margin: 10px 0;
-            border: 1px solid #ccc;
-            font-weight: bold;
-            color: #444;
+            border-radius: 8px;
+            color: #fff;
         }
         .projects {
             display: none;
             margin-left: 20px;
         }
-        .project {
-            margin: 15px 0;
+        .content {
+            color: #ddd; /* Lighter text color for readability */
         }
-        .project img {
-            float: left;
+        .image img {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .profile-pic {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            object-fit: cover;
             margin-right: 20px;
-            border-radius: 5px;
         }
-        .experience, .publication {
-            padding: 15px;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            margin: 20px 0;
+        .header-quote {
+            color: #aaa; /* Subtle color for the quote */
+            font-style: italic;
+            margin-top: -10px;
         }
-        .experience img, .publication img {
-            float: left;
-            margin-right: 20px;
+        .experience-logo img {
+            height: 50px;
+            width: 50px;
+            object-fit: contain;
+        }
+        .wrapper.spotlight.style1 .inner {
+            display: flex;
+            flex-direction: column;
         }
     </style>
     <script>
@@ -61,7 +72,13 @@
 <body class="is-preload">
     <div id="page-wrapper">
         <header id="header" class="alt">
-            <h1><a href="index.html">Karman Singh Bains</a></h1>
+            <div style="display: flex; align-items: center;">
+                <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic" />
+                <div>
+                    <h1>Karman Singh Bains</h1>
+                    <p class="header-quote">"Raw Data is my girlfriend and I can understand her - Some Smart Guy"</p>
+                </div>
+            </div>
         </header>
 
         <nav id="menu">
@@ -77,107 +94,142 @@
         <section id="banner">
             <div class="inner">
                 <h2>Karman Singh Bains Portfolio</h2>
-                <p>Data Scientist | <a href="https://www.linkedin.com/in/bainskarman/">LinkedIn</a></p>
+                <p>Data Scientist <a href="https://www.linkedin.com/in/bainskarman/">@bainskarman</a></p>
                 <p>Skills: Data Analysis, NLP, Machine Learning, Python, SQL, Power BI, Tableau, MS Excel</p>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects">
+        <!-- Project Categories -->
+        <section id="wrapper">
             <h2>Projects</h2>
 
             <div class="category" onclick="toggleProjects('mlDlProjects')">ML/DL Projects</div>
             <div id="mlDlProjects" class="projects">
-                <div class="project">
-                    <img src="images/credit.jpg" height="200" width="250" alt="Credit Check" />
-                    <h3>Credit Analysis</h3>
-                    <p>A Streamlit app to predict credit scores using user information. Available profiles: Poor, Standard, Good.</p>
-                    <a href="https://github.com/bainskarman/projects/tree/main/Credit_Classification_End_to_End" class="special">Learn More</a>
-                </div>
-                <div class="project">
-                    <img src="images/loan.jpg" height="200" width="200" alt="Loan Risk Analysis" />
-                    <h3>Loan Default Analysis</h3>
-                    <p>Predicts loan default probabilities based on user inputs using ML models.</p>
-                    <a href="https://github.com/bainskarman/projects/tree/main/Loan_Default_Probability_End_to_End" class="special">Learn More</a>
-                </div>
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://creditchecker.streamlit.app/" class="image"><img src="images/credit.jpg" alt="Credit Check" /></a>
+                        <div class="content">
+                            <h2 class="major">Credit Analysis</h2>
+                            <p>Predicting credit scores based on user-provided information. Three profiles available for demonstration.</p>
+                            <a href="https://github.com/bainskarman/projects/tree/main/Credit_Classification_End_to_End" class="special">Learn More</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://loanriskanalysis.streamlit.app/" class="image"><img src="images/loan.jpg" alt="Loan Risk" /></a>
+                        <div class="content">
+                            <h2 class="major">Loan Default Risk</h2>
+                            <p>Predicting the probability of loan default based on user-provided data.</p>
+                            <a href="https://github.com/bainskarman/projects/tree/main/Loan_Default_Probability_End_to_End" class="special">Learn More</a>
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <div class="category" onclick="toggleProjects('visualizationProjects')">Data Visualization Projects</div>
             <div id="visualizationProjects" class="projects">
-                <div class="project">
-                    <img src="images/ttc.png" height="200" width="200" alt="TTC Analysis" />
-                    <h3>TTC Delay Analysis</h3>
-                    <p>Analysis and prediction of TTC bus delays. Streamlit app with visual insights.</p>
-                    <a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" class="special">Learn More</a>
-                </div>
-                <div class="project">
-                    <img src="images/powerbi.png" alt="PowerBI Survey Analysis" />
-                    <h3>Survey Analysis and Sales Report</h3>
-                    <p>Analyzing survey data using Power BI to extract insights and visualize sales performance.</p>
-                    <a href="https://app.powerbi.com/links/cEiqieuETu" class="special">Learn More</a>
-                </div>
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="image"><img src="images/powerbi.png" alt="Survey Analysis" /></a>
+                        <div class="content">
+                            <h2 class="major">Survey Analysis & Sales Report</h2>
+                            <a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="special">Learn More</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://ttcdelay.streamlit.app/" class="image"><img src="images/ttc.png" alt="TTC Delay Analysis" /></a>
+                        <div class="content">
+                            <h2 class="major">TTC Delay Analysis</h2>
+                            <p>Analyzing and forecasting expected delays for TTC buses.</p>
+                            <a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" class="special">Learn More</a>
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <div class="category" onclick="toggleProjects('nlpProjects')">NLP Projects</div>
             <div id="nlpProjects" class="projects">
-                <div class="project">
-                    <img src="images/ttc.png" height="200" width="200" alt="Wikipedia Classification" />
-                    <h3>Wikipedia Articles Classification</h3>
-                    <p>Classifies Wikipedia articles into three levels using LSTM with over 200+ unique classes. 88% accuracy.</p>
-                    <a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" class="special">Learn More</a>
-                </div>
-                <div class="project">
-                    <h3>YouTube Sentiment Analysis</h3>
-                    <p>A comprehensive sentiment analysis tool for YouTube video comments using NLP models.</p>
-                    <a href="https://github.com/bainskarman/projects" class="special">Learn More</a>
-                </div>
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" class="image"><img src="images/nlp.jpg" alt="Wiqi Classification" /></a>
+                        <div class="content">
+                            <h2 class="major">Wikipedia Articles Classification</h2>
+                            <p>Classifies text into 3 levels using LSTM with 88% accuracy. 200+ unique classes.</p>
+                            <a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" class="special">Learn More</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="image"><img src="images/ats.jpg" alt="ATS Resume Review" /></a>
+                        <div class="content">
+                            <h2 class="major">ATS Resume Screening</h2>
+                            <p>Using BERT for ATS scores and NVIDIA Llama 3.1 for detailed review.</p>
+                            <a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="special">Learn More</a>
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <div class="category" onclick="toggleProjects('genAiProjects')">Generative AI Projects</div>
             <div id="genAiProjects" class="projects">
-                <div class="project">
-                    <h3>ATS Resume Screening with AI</h3>
-                    <p>Automates ATS score evaluation using BERT and provides a detailed review with NVIDIA Llama 3.1.</p>
-                    <a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="special">Learn More</a>
-                </div>
+                <section class="wrapper spotlight style1">
+                    <div class="inner">
+                        <a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="image"><img src="images/ai.jpg" alt="Generative AI" /></a>
+                        <div class="content">
+                            <h2 class="major">Resume Review with AI</h2>
+                            <p>Automating ATS scoring and resume review with generative AI.</p>
+                            <a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="special">Learn More</a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
 
         <!-- Experience Section -->
         <section id="experience">
             <h2>Experience</h2>
-            <div class="experience">
-                <img src="images/aenix.png" height="80" alt="AENIX Logo" />
-                <h3>Data Analyst at AENIX (2021-2022)</h3>
+            <div class="experience-entry">
+                <div class="experience-logo"><img src="images/aenix.png" alt="AENIX Logo" /></div>
+                <div class="content">
+                    <h3>Data Analyst at AENIX (2021-2022)</h3>
+                </div>
             </div>
-            <div class="experience">
-                <img src="images/iata.png" height="80" alt="IATA Logo" />
-                <h3>Data Scientist at IATA (2024-Present)</h3>
+            <div class="experience-entry">
+                <div class="experience-logo"><img src="images/iata.png" alt="IATA Logo" /></div>
+                <div class="content">
+                    <h3>Data Scientist at IATA (2024-present)</h3>
+                </div>
             </div>
         </section>
 
         <!-- Publication Section -->
         <section id="publication">
             <h2>Publication</h2>
-            <div class="publication">
-                <img src="images/alzheimer.jpg" height="80" alt="Alzheimer" />
+            <div class="content">
                 <h3>Alzheimer Diagnosis from MRI</h3>
-                <p>Using deep learning on OASIS data with 92% accuracy. Published in STEM Fellowship.</p>
+                <p>Achieved 92% accuracy using OASIS data and deep learning. Published with STEM Fellowship.</p>
+                <a href="https://github.com/bainskarman/Alzheimer" class="special">View Code</a> | 
                 <a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj-2023-007" class="special">Read Publication</a>
-                <a href="https://github.com/bainskarman/Alzheimer" class="special">View Code</a>
             </div>
         </section>
 
         <footer id="footer">
             <div class="inner">
                 <ul class="contact">
-                    <li class="icon solid fa-home">Toronto, ON, Canada</li>
+                    <li class="icon solid fa-home">Toronto, ON<br /> Canada</li>
                     <li class="icon solid fa-envelope"><a href="mailto:bsinghkarman@gmail.com">bsinghkarman@gmail.com</a></li>
-                    <li class="icon brands fa-github"><a href="https://github.com/bainskarman">GitHub</a></li>
-                    <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/bainskarman/">LinkedIn</a></li>
+                    <li class="icon brands fa-github"><a href="https://github.com/bainskarman">bainskarman</a></li>
+                    <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/bainskarman/">@bainskarman</a></li>
                 </ul>
                 <ul class="copyright">
-                    <li>&copy; 2024 Karman Singh Bains. All rights reserved.</li>
+                    <li>&copy; Karman Singh Bains All rights reserved.</li>
                 </ul>
             </div>
         </footer>
