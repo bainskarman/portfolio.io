@@ -36,3 +36,10 @@ gsap.from('.project-card', {
     duration: 1,
     stagger: 0.2
 });
+
+gsap.from('.profile-image', {
+    duration: 1,
+    opacity: 0,
+    y: -50,
+    ease: 'bounce.out'
+});

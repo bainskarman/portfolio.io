@@ -13,15 +13,25 @@
     <script src="scripts/main.js" defer></script>
     <script src="scripts/animations.js" defer></script>
     <script src="scripts/scroll.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="banner">
+            <!-- Add your image here -->
+            <img src="images/mypic.png" alt="Karman Singh Bains" class="profile-image">
             <h1>Karman Singh Bains</h1>
             <h2>Data Analyst / Data Scientist</h2>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/bainskarman/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/bainskarman" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/bainskarman/" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/bainskarman" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.kaggle.com/karmansinghbains" target="_blank">
+                    <i class="fab fa-kaggle"></i> Kaggle
+                </a>
             </div>
         </div>
     </header>
@@ -31,41 +41,248 @@
             <h2>About Me</h2>
             <p>I thrive at the intersection of data science and business strategy, where technical innovation meets real-world impact. I love working in environments that bring together data scientists and business analysts, bridging the gap between raw data and strategic decision-making. I call myself a Business Scientist—someone who translates complex data into actionable insights that drive business success.</p>
             <p>I am passionate about building scalable data solutions, optimizing workflows, and leveraging AI to solve meaningful problems. I constantly push myself to learn, experiment, and innovate, whether through personal projects, Kaggle competitions, or exploring new technologies on GitHub and Hugging Face.</p>
-            <p>Collaboration is at the heart of what I do—I believe that the best solutions come from diverse teams working together, blending analytical rigor with business acumen. I am always eager to take on new challenges, lead initiatives, and contribute to a data-driven future.</p>
-        </div>
-    </section>
+            <!-- Skills Grid -->
+        <div class="skills-grid">
+            <!-- Languages -->
+            <div class="skill-category">
+                <i class="fas fa-language"></i>
+                <h3>Languages</h3>
+                <p>English, Hindi, Punjabi</p>
+            </div>
 
-    <section id="projects">
+            <!-- BI Tools -->
+            <div class="skill-category">
+                <i class="fas fa-chart-line"></i>
+                <h3>BI Tools</h3>
+                <p>Power BI, Tableau</p>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>Python, SQL</p>
+            </div>
+
+            <!-- Database Management -->
+            <div class="skill-category">
+                <i class="fas fa-database"></i>
+                <h3>Databases</h3>
+                <p>Talend, MS SQL, Snowflake</p>
+            </div>
+
+            <!-- NLP, ML, DL -->
+            <div class="skill-category">
+                <i class="fas fa-brain"></i>
+                <h3>NLP & ML</h3>
+                <p>NLP, Machine Learning, Deep Learning</p>
+            </div>
+
+            <!-- Cloud and Others -->
+            <div class="skill-category">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud & Tools</h3>
+                <p>AWS, Sagemaker, Git, Jira</p>
+            </div>
+
+            <!-- Interests -->
+            <div class="skill-category">
+                <i class="fas fa-heart"></i>
+                <h3>Interests</h3>
+                <p>Traveling, Photography, Teaching</p>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Total Projects</h3>
+                <p class="count" data-target="20">0+</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-tasks"></i>
+                <h3>End-to-End Projects</h3>
+                <p class="count" data-target="8">0+</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Dashboards</h3>
+                <p class="count" data-target="5">0+</p>
+            </div>
+            <div class="stat">
+                <i class="fas fa-trophy"></i>
+                <h3>Awards</h3>
+                <p class="count" data-target="2">0+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="experience-grid">
+            <!-- Current Experience: IATA -->
+            <div class="experience-card">
+                <div class="experience-logo">
+                    <img src="images/iata.jpg" alt="IATA Logo">
+                </div>
+                <h3>Data Scientist @ IATA</h3>
+                <p class="experience-date">2024 - Present</p>
+                <p>Working with the business part of the data team in one of the largest data-sharing programs for aviation.</p>
+            </div>
+
+            <!-- Past Experience: AENIX -->
+            <div class="experience-card">
+                <div class="experience-logo">
+                    <img src="images/aenix_logo.jpg" alt="AENIX Logo">
+                </div>
+                <h3>Data Analyst @ AENIX</h3>
+                <p class="experience-date">2021 - 2022</p>
+                <p>Provided data-based end-to-end IT solutions to industrial companies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="Publications">
         <div class="container">
-            <h2>Projects</h2>
+            <h2>Reports and Publications</h2>
             <div class="project-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
                     <img src="images/alzheimer.jpg" alt="Alzheimer's Diagnostic">
                     <h3>Alzheimer's Diagnostic from MRI Scans</h3>
-                    <p>Detecting Alzheimer's disease at an early stage using the OASIS brain dataset.</p>
-                    <a href="https://github.com/bainskarman/Alzheimer" target="_blank">Learn more on GitHub</a>
-                    <a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj-2023-007" target="_blank">Publication Link</a>
+                    <p>Research on early-stage Alzheimer's detection by utilizing original NIfTI files rather than traditional image files. We curated a unique dataset from raw MRI scans and applied advanced deep learning techniques to identify early biomarkers of Alzheimer's.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/bainskarman/Alzheimer" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Learn more on GitHub
+                        </a>
+                        <a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj-2023-007" target="_blank" class="project-link">
+                            <i class="fas fa-book"></i> Publication Link
+                        </a>
+                        <a href="https://github.com/bainskarman/Alzheimer/blob/main/Publication%20Report.pdf" target="_blank" class="project-link">
+                            <i class="fas fa-file-pdf"></i> Original Report
+                        </a>
+                    </div>
                 </div>
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="images/wikipedia-logo.jpg" alt="Wikipedia Article Classification">
-                    <h3>Wikipedia Article Classification</h3>
-                    <p>Classifying Wikipedia articles into up to three levels with over 200 unique categories.</p>
-                    <a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" target="_blank">Try the App</a>
-                    <a href="https://github.com/bainskarman/projects" target="_blank">View Repository</a>
+                    <img src="images/ttc.png" alt="TTC Delay Report">
+                    <h3>Toronto Transit Delay Detailed Analysis and Forecasting</h3>
+                    <p>Analyzing transit delays for TTC (Toronto Transit Commission) buses using real-time data, including the current date, time, location, and selected route. This analysis incorporates visualization techniques, interactive dashboards, time series analysis, and forecasting models such as ARIMA and Prophet to identify trends and understand potential influencing factors like traffic conditions and rush hours. The project also includes a predictive model to forecast delays based on historical data and predict delays based on time, location, and route.</p>
+                    <div class="project-links">
+                        <a href="https://ttcdelay.streamlit.app/" target="_blank" class="project-link">
+                            <i class="fas fa-rocket"></i> Try the App
+                        </a>
+                        <a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
                 </div>
                 <!-- Add more projects similarly -->
             </div>
         </div>
     </section>
 
+
+    <section id="top-projects">
+        <div class="container">
+            <h2>Top Projects</h2>
+            
+            <!-- Project Categories -->
+            <div class="project-categories">
+                <!-- Machine Learning Projects -->
+                <div class="category">
+                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <img src="images/wikipedia-logo.jpg" alt="Wikipedia Article Classification">
+                            <h4>Wikipedia Article Classification</h4>
+                            <p>Classifies Wikipedia articles into 200+ categories with 88% accuracy using LSTM.</p>
+                            <a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" target="_blank">Try the App</a>
+                            <a href="https://github.com/bainskarman/projects/tree/main/Wiqi%203%20Level%20Classification" target="_blank">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Generative AI -->
+                <div class="category">
+                    <h3><i class="fas fa-robot"></i> Generative AI</h3>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <img src="images/ats.png" alt="ATS Screening with AI">
+                            <h4>ATS Screening with AI</h4>
+                            <p>Generative AI for resume analysis and ATS feedback.</p>
+                            <a href="https://huggingface.co/spaces/bainskarman/ATSScanner" target="_blank">Try the App</a>
+                            <a href="https://huggingface.co/spaces/bainskarman/ATSScanner/tree/main" target="_blank">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Data Applications -->
+                <div class="category">
+                    <h3><i class="fas fa-chart-line"></i> Data Applications</h3>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <img src="images/credit.jpg" alt="Credit Check">
+                            <h4>Credit Check</h4>
+                            <p>Predicts credit scores based on user-provided information.</p>
+                            <a href="https://creditchecker.streamlit.app/" target="_blank">Try the App</a>
+                            <a href="https://github.com/bainskarman/projects/tree/main/Wiqi%203%20Level%20Classification" target="_blank">View Repository</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Business Intelligence -->
+                <div class="category">
+                    <h3><i class="fas fa-chart-bar"></i> Business Intelligence</h3>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <img src="images/powerbi.png" alt="Data Professional Survey Analysis">
+                            <h4>Data Professional Survey Analysis</h4>
+                            <p>Analyzes survey data of data professionals using Power BI.</p>
+                            <a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- More Projects Button -->
+            <div class="more-projects">
+                <a href="https://github.com/bainskarman" target="_blank" class="btn">View More Projects on GitHub</a>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
-            <p>Location: Toronto, ON, Canada</p>
-            <p>Email: <a href="mailto:bsinghkarman@gmail.com">bsinghkarman@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/bainskarman" target="_blank">bainskarman</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/bainskarman/" target="_blank">@bainskarman</a></p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <p>Canada</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:bsinghkarman@gmail.com">bsinghkarman@gmail.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/bainskarman" target="_blank">bainskarman</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/bainskarman/" target="_blank">@bainskarman</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-kaggle"></i>
+                        <a href="https://www.kaggle.com/karmansinghbains" target="_blank">karmansinghbains</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
