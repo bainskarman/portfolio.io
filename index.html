@@ -6,31 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-        /* Custom styles for icons and layout */
-        .icon-link {
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-        .section-header {
-            cursor: pointer;
-            padding: 10px;
-            background-color: #f4f4f4;
-            border-bottom: 1px solid #ddd;
-            margin-bottom: 10px;
-        }
-        .section-content {
-            display: none;
-            padding: 10px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-        }
-        .section-header.active {
-            background-color: #ddd;
-        }
-    </style>
 </head>
 <body class="is-preload">
 
@@ -77,8 +54,8 @@
         <section id="experience" class="wrapper style2">
             <div class="inner">
                 <h2 class="major">Experience</h2>
-                <div class="section-header" onclick="toggleSection('experience-content')">International Air Transport Association (IATA) - Aviation Data Management Intern</div>
-                <div id="experience-content" class="section-content">
+                <div class="experience-item">
+                    <h3>International Air Transport Association (IATA) - Aviation Data Management Intern</h3>
                     <p><strong>April 2024 - Present</strong></p>
                     <ul>
                         <li>Orchestrated ETL pipelines with Snowflake, Talend, AWS, and Python, unifying data from more than 300 airlines and GSPs.</li>
@@ -98,60 +75,62 @@
         <section id="projects" class="wrapper style3">
             <div class="inner">
                 <h2 class="major">Projects</h2>
-                <div class="section-header" onclick="toggleSection('project1')">Alzheimer's Diagnostic from MRI Scans</div>
-                <div id="project1" class="section-content">
-                    <p>The aim of the project is to detect Alzheimer's disease at an early stage using the OASIS brain dataset. This project involves implementing machine learning techniques and exploring different algorithms and methods to accurately detect the disease through the given data. This model will detect changes in the structure of specific parts of the brain and abnormalities that lead to Alzheimer's disease.</p>
-                    <a href="https://github.com/bainskarman/Alzheimer" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
-                    <a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj-2023-007" class="special"><i class="fas fa-book icon-link"></i>Publication</a>
-                </div>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <h3>Alzheimer's Diagnostic from MRI Scans</h3>
+                        <p>The aim of the project is to detect Alzheimer's disease at an early stage using the OASIS brain dataset. This project involves implementing machine learning techniques and exploring different algorithms and methods to accurately detect the disease through the given data. This model will detect changes in the structure of specific parts of the brain and abnormalities that lead to Alzheimer's disease.</p>
+                        <a href="https://github.com/bainskarman/Alzheimer" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
+                        <a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj-2023-007" class="special"><i class="fas fa-book icon-link"></i>Publication</a>
+                    </div>
 
-                <div class="section-header" onclick="toggleSection('project2')">Wikipedia Article Classification</div>
-                <div id="project2" class="section-content">
-                    <p>This project classifies Wikipedia articles into up to three levels with over 200 unique categories and achieves an accuracy of 88% using LSTM. The model effectively processes the text to provide relevant classifications based on content.</p>
-                    <a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
-                    <a href="https://github.com/bainskarman/projects" class="special"><i class="fab fa-github icon-link"></i>View Repository</a>
-                </div>
+                    <div class="project-item">
+                        <h3>Wikipedia Article Classification</h3>
+                        <p>This project classifies Wikipedia articles into up to three levels with over 200 unique categories and achieves an accuracy of 88% using LSTM. The model effectively processes the text to provide relevant classifications based on content.</p>
+                        <a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                        <a href="https://github.com/bainskarman/projects" class="special"><i class="fab fa-github icon-link"></i>View Repository</a>
+                    </div>
 
-                <div class="section-header" onclick="toggleSection('project3')">ATS Screening with AI</div>
-                <div id="project3" class="section-content">
-                    <p>This generative AI project focuses on ATS screening, using advanced algorithms to analyze resumes and provide feedback for improvements. The application helps job seekers enhance their chances of getting through the ATS.</p>
-                    <a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
-                    <a href="https://github.com/bainskarman/projects" class="special"><i class="fab fa-github icon-link"></i>View Repository</a>
-                </div>
+                    <div class="project-item">
+                        <h3>ATS Screening with AI</h3>
+                        <p>This generative AI project focuses on ATS screening, using advanced algorithms to analyze resumes and provide feedback for improvements. The application helps job seekers enhance their chances of getting through the ATS.</p>
+                        <a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                        <a href="https://github.com/bainskarman/projects" class="special"><i class="fab fa-github icon-link"></i>View Repository</a>
+                    </div>
 
-                <div class="section-header" onclick="toggleSection('project4')">Credit Check</div>
-                <div id="project4" class="section-content">
-                    <p>A Streamlit application for predicting credit scores based on user-provided information. Three profiles ("Poor," "Standard," "Good") are available for demonstration.</p>
-                    <a href="https://creditchecker.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
-                    <a href="https://github.com/bainskarman/projects/tree/main/Credit_Classification_End_to_End" class="special"><i class="fab fa-github icon-link"></i>Learn More</a>
-                </div>
+                    <div class="project-item">
+                        <h3>Credit Check</h3>
+                        <p>A Streamlit application for predicting credit scores based on user-provided information. Three profiles ("Poor," "Standard," "Good") are available for demonstration.</p>
+                        <a href="https://creditchecker.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                        <a href="https://github.com/bainskarman/projects/tree/main/Credit_Classification_End_to_End" class="special"><i class="fab fa-github icon-link"></i>Learn More</a>
+                    </div>
 
-                <div class="section-header" onclick="toggleSection('project5')">Loan Risk Analysis</div>
-                <div id="project5" class="section-content">
-                    <p>This Streamlit application predicts the probability of loan default based on user-provided information such as education level, loan purpose, employment type, loan amount, loan term, credit score, monthly income, interest rate, and months employed. It uses a pre-trained machine learning model.</p>
-                    <a href="https://loanriskanalysis.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
-                    <a href="https://github.com/bainskarman/projects/tree/main/Loan_Default_Probability_End_to_End" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
-                </div>
+                    <div class="project-item">
+                        <h3>Loan Risk Analysis</h3>
+                        <p>This Streamlit application predicts the probability of loan default based on user-provided information such as education level, loan purpose, employment type, loan amount, loan term, credit score, monthly income, interest rate, and months employed. It uses a pre-trained machine learning model.</p>
+                        <a href="https://loanriskanalysis.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                        <a href="https://github.com/bainskarman/projects/tree/main/Loan_Default_Probability_End_to_End" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
+                    </div>
 
-                <div class="section-header" onclick="toggleSection('project6')">TTC Delay Analysis and Forecasting</div>
-                <div id="project6" class="section-content">
-                    <p>The TTC Delay Analysis is a Streamlit application that shows analysis and forecasts the expected delay for TTC (Toronto Transit Commission) buses based on the current date, time, location, and selected route. The application utilizes pre-trained machine learning models for delay prediction.</p>
-                    <a href="https://ttcdelay.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
-                    <a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
-                </div>
+                    <div class="project-item">
+                        <h3>TTC Delay Analysis and Forecasting</h3>
+                        <p>The TTC Delay Analysis is a Streamlit application that shows analysis and forecasts the expected delay for TTC (Toronto Transit Commission) buses based on the current date, time, location, and selected route. The application utilizes pre-trained machine learning models for delay prediction.</p>
+                        <a href="https://ttcdelay.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                        <a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
+                    </div>
 
-                <div class="section-header" onclick="toggleSection('project7')">Uber Fare Estimation App</div>
-                <div id="project7" class="section-content">
-                    <p>A Streamlit application for estimating Uber ride fares based on user-provided pickup and dropoff coordinates, passenger count, and the current date and time.</p>
-                    <a href="https://ubercostestimation.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
-                    <a href="https://github.com/bainskarman/projects/tree/main/Uber_Fare_End_to_End" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
-                </div>
+                    <div class="project-item">
+                        <h3>Uber Fare Estimation App</h3>
+                        <p>A Streamlit application for estimating Uber ride fares based on user-provided pickup and dropoff coordinates, passenger count, and the current date and time.</p>
+                        <a href="https://ubercostestimation.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                        <a href="https://github.com/bainskarman/projects/tree/main/Uber_Fare_End_to_End" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
+                    </div>
 
-                <div class="section-header" onclick="toggleSection('project8')">Power BI Projects</div>
-                <div id="project8" class="section-content">
-                    <p>Data Professional Survey Analysis using Power BI and Sales Report with Power BI and SQL.</p>
-                    <a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="special"><i class="fas fa-chart-bar icon-link"></i>Data Professional Survey</a>
-                    <a href="https://app.powerbi.com/view?r=eyJrIjoiOTg4ODViNzItMDczYi00NTMyLTgyM2MtY2I2OGYwZGZlMmQ5IiwidCI6ImI2NDE3Y2QwLTFmNzMtNDQ3MS05YTM5LTIwOTUzODIyYTM0YSIsImMiOjN9" class="special"><i class="fas fa-chart-bar icon-link"></i>Sales Report</a>
+                    <div class="project-item">
+                        <h3>Power BI Projects</h3>
+                        <p>Data Professional Survey Analysis using Power BI and Sales Report with Power BI and SQL.</p>
+                        <a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="special"><i class="fas fa-chart-bar icon-link"></i>Data Professional Survey</a>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiOTg4ODViNzItMDczYi00NTMyLTgyM2MtY2I2OGYwZGZlMmQ5IiwidCI6ImI2NDE3Y2QwLTFmNzMtNDQ3MS05YTM5LTIwOTUzODIyYTM0YSIsImMiOjN9" class="special"><i class="fas fa-chart-bar icon-link"></i>Sales Report</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -172,22 +151,13 @@
     </div>
 
     <!-- Scripts -->
-    <script>
-        function toggleSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            if (section.style.display === "none" || section.style.display === "") {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
-        }
-    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
 
 </body>
 </html>
