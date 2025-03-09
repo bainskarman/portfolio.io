@@ -1,219 +1,193 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Karman Singh Bains</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<head>
+    <title>Karman Singh Bains</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Custom styles for icons and layout */
+        .icon-link {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        .section-header {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            display: none;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .section-header.active {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body class="is-preload">
 
-		<style>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
 
-			/* Image adjustment for LinkedIn Profile */
-			#banner a img {
-				width: 200px;
-				height: 150px;
-				vertical-align: middle;
-				margin-left: 10px;
-				border-radius: 50%;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1><a href="index.html">Karman Singh Bains</a></h1>
+            <nav>
+                <a href="#summary">Summary</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-		<!-- Page Wrapper -->
-		<div id="page-wrapper">
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <div class="logo"><span class="icon fa-gem"></span></div>
+                <h2>Karman Singh Bains</h2>
+                <p>Data Scientist @ IATA | Business Scientist</p>
+                <p>Skills: Data Analysis, Machine Learning, Python, SQL, Power BI, Tableau, MS Excel</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/bainskarman/" target="_blank"><i class="fab fa-linkedin icon-link"></i></a>
+                    <a href="https://github.com/bainskarman" target="_blank"><i class="fab fa-github icon-link"></i></a>
+                    <a href="mailto:bsinghkarman@gmail.com"><i class="fas fa-envelope icon-link"></i></a>
+                </div>
+            </div>
+        </section>
 
-			<!-- Header -->
-			<header id="header" class="alt">
-				<h1><a href="index.html">Karman Singh Bains</a></h1>
-			</header>
+        <!-- Summary Section -->
+        <section id="summary" class="wrapper style1">
+            <div class="inner">
+                <h2 class="major">Summary</h2>
+                <p>I thrive at the intersection of data science and business strategy, where technical innovation meets real-world impact. I love working in environments that bring together data scientists and business analysts, bridging the gap between raw data and strategic decision-making. I call myself a Business Scientist—someone who translates complex data into actionable insights that drive business success.</p>
+                <p>I am passionate about building scalable data solutions, optimizing workflows, and leveraging AI to solve meaningful problems. I constantly push myself to learn, experiment, and innovate, whether through personal projects, Kaggle competitions, or exploring new technologies on GitHub and Hugging Face.</p>
+                <p>Collaboration is at the heart of what I do—I believe that the best solutions come from diverse teams working together, blending analytical rigor with business acumen. I am always eager to take on new challenges, lead initiatives, and contribute to a data-driven future.</p>
+            </div>
+        </section>
 
-			<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<div class="logo"><span class="icon fa-gem"></span></div>
-					<h2>Karman Singh Bains Portfolio</h2>
-					<p>Data Analyst / Data Scientist 
-						<a href="https://www.linkedin.com/in/bainskarman/" target="_blank">
-						</a>
-					</p>
-					<p>Skills: Data Analysis, Machine Learning, Python, SQL, Power BI, Tableau, MS Excel</p>
-					<p>Data Scientist @ IATA </p>
-						<a href="https://www.linkedin.com/in/bainskarman/" target="_blank">
-						</a>
-				</div>
-			</section>
+        <!-- Experience Section -->
+        <section id="experience" class="wrapper style2">
+            <div class="inner">
+                <h2 class="major">Experience</h2>
+                <div class="section-header" onclick="toggleSection('experience-content')">International Air Transport Association (IATA) - Aviation Data Management Intern</div>
+                <div id="experience-content" class="section-content">
+                    <p><strong>April 2024 - Present</strong></p>
+                    <ul>
+                        <li>Orchestrated ETL pipelines with Snowflake, Talend, AWS, and Python, unifying data from more than 300 airlines and GSPs.</li>
+                        <li>Created data transformation and quality assurance scripts that optimized data workflows, streamlining unstructured incident reports.</li>
+                        <li>Led end-to-end development of a 92%-accurate NLP-based de-identification model, integrated LLM for Snowflake data ingestion.</li>
+                        <li>Designed an 83% accuracy BERT-based model for multilevel incident classification to align descriptors to the standards set by the IATA.</li>
+                        <li>Architected a Streamlit data app with the I&D team, implementing business rules and saving up to 10 hours of manual extractions.</li>
+                        <li>Co-developed a dashboard to analyze taxi delays and fuel wastage across 150+ airports, driving cost savings and emission reductions.</li>
+                        <li>Simplified QA and Growth Analysis by integrating 3 different tables into a data model within Power BI, reducing manual work.</li>
+                        <li>Extended contract; became the focal point for 20 airlines and handled new client onboarding with the GADM team.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-			<section id="wrapper">
-				<!-- zero one-->
-					<section id="three" class="wrapper spotlight style3">
-						<div class="inner">
-							<a href="https://github.com/bainskarman/Alzheimer-" class="image"><img src="images/alzheimer.jpg" alt="" /></a>
-							<div class="content">
-								<h2 class="major">Publication: Alzheimer's Diagnostic from MRI Scans</h2>
-								<p>The aim of the project is to detect Alzheimer's disease at early stage using OASIS brain data set.
-									 This project involves using implementing machine learning techniques and exploring different algorithms and methods to accurately detect the disease through the given data.
-									  This model will detect change of structure is specific part of brain and abnormalities that leads to Alzheimer's disease.</p>
-								<a href="https://github.com/bainskarman/Alzheimer" class="special">Learn more</a>
-								<a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj-2023-007" class="special">Publication</a>
-							</div>
-						</div>
-					</section>
-                        
-                            <section id="wikipedia-classification" class="wrapper spotlight style3">
-                            	<div class="inner">
-                            		<a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" class="image"><img src="images/wikipedia-logo.jpg" alt="Wikipedia Article Classification" /></a>
-                            		<div class="content">
-                            			<h2 class="major">Project: Wikipedia Article Classification</h2>
-                            			<p>This project classifies Wikipedia articles into up to three levels with over 200 unique categories and achieves an accuracy of 88% using LSTM. The model effectively processes the text to provide relevant classifications based on content.</p>
-                            			<a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" class="special">Try the App</a>
-                            			<a href="https://github.com/bainskarman/projects" class="special">View Repository</a>
-                            		</div>
-                            	</div>
-                            </section>
-                        
-                            <section id="ats-screening" class="wrapper spotlight style3">
-                            	<div class="inner">
-                            		<a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="image"><img src="images/ats.png" alt="ATS Screening with AI" /></a>
-                            		<div class="content">
-                            			<h2 class="major">Project: ATS Screening with AI</h2>
-                            			<p>This generative AI project focuses on ATS screening, using advanced algorithms to analyze resumes and provide feedback for improvements. The application helps job seekers enhance their chances of getting through the ATS.</p>
-                            			<a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="special">Try the App</a>
-                            			<a href="https://github.com/bainskarman/projects" class="special">View Repository</a>
-                            		</div>
-                            	</div>
-                            </section>
+        <!-- Projects Section -->
+        <section id="projects" class="wrapper style3">
+            <div class="inner">
+                <h2 class="major">Projects</h2>
+                <div class="section-header" onclick="toggleSection('project1')">Alzheimer's Diagnostic from MRI Scans</div>
+                <div id="project1" class="section-content">
+                    <p>The aim of the project is to detect Alzheimer's disease at an early stage using the OASIS brain dataset. This project involves implementing machine learning techniques and exploring different algorithms and methods to accurately detect the disease through the given data. This model will detect changes in the structure of specific parts of the brain and abnormalities that lead to Alzheimer's disease.</p>
+                    <a href="https://github.com/bainskarman/Alzheimer" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
+                    <a href="https://journal.stemfellowship.org/doi/pdf/10.17975/sfj-2023-007" class="special"><i class="fas fa-book icon-link"></i>Publication</a>
+                </div>
 
+                <div class="section-header" onclick="toggleSection('project2')">Wikipedia Article Classification</div>
+                <div id="project2" class="section-content">
+                    <p>This project classifies Wikipedia articles into up to three levels with over 200 unique categories and achieves an accuracy of 88% using LSTM. The model effectively processes the text to provide relevant classifications based on content.</p>
+                    <a href="https://huggingface.co/spaces/bainskarman/WiqiClassification" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                    <a href="https://github.com/bainskarman/projects" class="special"><i class="fab fa-github icon-link"></i>View Repository</a>
+                </div>
 
-                        
-    					<!-- One -->
-    						<section id="one" class="wrapper spotlight style1">
-    							<div class="inner">
-    								<a href="https://creditchecker.streamlit.app/" class="image"><img src="images/credit.jpg" height="200" width="250"/></a>
-    								<div class="content">
-    									<h2 class="major">Credit Check</h2>
-    									<p> A Streamlit application for predicting credit scores based on user-provided information. Three profiles ("Poor," "Standard," "Good") are available for demonstration.
-    									</p>
-    									<a href="https://github.com/bainskarman/projects/tree/main/Credit_Classification_End_to_End" class="special">Learn More</a>
-    								</div>
-    							</div>
-    						</section>
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="https://loanriskanalysis.streamlit.app/" class="image"><img src="images/loan.jpg" alt="" height="200" width="200" /></a>
-									<div class="content">
-										<h2 class="major">Loan Risk Analysis</h2>
-										<p>This Streamlit application predicts the probability of loan default based on user-provided information such as education level, loan purpose, employment type, loan amount, loan term, credit score, monthly income, interest rate, and months employed. It uses a pre-trained machine learning model.</p>
-										<a href="https://github.com/bainskarman/projects/tree/main/Loan_Default_Probability_End_to_End"class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="https://ttcdelay.streamlit.app/" class="image"><img src="images/ttc.png" alt="" /></a>
-									<div class="content">
-										<h2 class="major">TTC Delay Analysis and Forcasting</h2>
-										<p>The TTC Delay Analysis is a Streamlit application that show analysis and forcast the expected delay for TTC (Toronto Transit Commission) buses based on current date, time, location, and selected route. The application utilizes pre-trained machine learning models for delay prediction.</p>
-										<a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
-							<section id="four" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="https://ubercostestimation.streamlit.app/" class="image"><img src="images/uber.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Uber Fare Estimation App</h2>
-										<p>A Streamlit application for estimating Uber ride fares based on user-provided pickup and dropoff coordinates, passenger count, and the current date and time.</p>
-										<a href="https://github.com/bainskarman/projects/tree/main/Uber_Fare_End_to_End" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+                <div class="section-header" onclick="toggleSection('project3')">ATS Screening with AI</div>
+                <div id="project3" class="section-content">
+                    <p>This generative AI project focuses on ATS screening, using advanced algorithms to analyze resumes and provide feedback for improvements. The application helps job seekers enhance their chances of getting through the ATS.</p>
+                    <a href="https://huggingface.co/spaces/bainskarman/ATSScanner" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                    <a href="https://github.com/bainskarman/projects" class="special"><i class="fab fa-github icon-link"></i>View Repository</a>
+                </div>
 
-						<!-- one -->
-							<section id="five" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Power BI Projects</h2>
-									<p></p>
-									<section class="features">
-										<article>
-											<a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="image"><img src="images/powerbi.png" alt="" /></a>
-											<h3 class="major">Data Professional Survey Analysis using Power BI</h3>
-											<p></p>
-											<a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="special">Learn more</a>
-										</article> 
-										 <article>
-											<a href="https://app.powerbi.com/view?r=eyJrIjoiOTg4ODViNzItMDczYi00NTMyLTgyM2MtY2I2OGYwZGZlMmQ5IiwidCI6ImI2NDE3Y2QwLTFmNzMtNDQ3MS05YTM5LTIwOTUzODIyYTM0YSIsImMiOjN9" class="image"><img src="images/sales.png" alt="" /></a>
-											<h3 class="major">Sales Report with Power BI and SQL</h3>
-											<p></p>
-											<a href="https://app.powerbi.com/view?r=eyJrIjoiOTg4ODViNzItMDczYi00NTMyLTgyM2MtY2I2OGYwZGZlMmQ5IiwidCI6ImI2NDE3Y2QwLTFmNzMtNDQ3MS05YTM5LTIwOTUzODIyYTM0YSIsImMiOjN9" class="special">Learn more</a>
-										</article>
-										<!-- <article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section> -->
+                <div class="section-header" onclick="toggleSection('project4')">Credit Check</div>
+                <div id="project4" class="section-content">
+                    <p>A Streamlit application for predicting credit scores based on user-provided information. Three profiles ("Poor," "Standard," "Good") are available for demonstration.</p>
+                    <a href="https://creditchecker.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                    <a href="https://github.com/bainskarman/projects/tree/main/Credit_Classification_End_to_End" class="special"><i class="fab fa-github icon-link"></i>Learn More</a>
+                </div>
 
-					</section>
+                <div class="section-header" onclick="toggleSection('project5')">Loan Risk Analysis</div>
+                <div id="project5" class="section-content">
+                    <p>This Streamlit application predicts the probability of loan default based on user-provided information such as education level, loan purpose, employment type, loan amount, loan term, credit score, monthly income, interest rate, and months employed. It uses a pre-trained machine learning model.</p>
+                    <a href="https://loanriskanalysis.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                    <a href="https://github.com/bainskarman/projects/tree/main/Loan_Default_Probability_End_to_End" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
+                </div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<!-- <h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form> -->
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Toronto, ON</br> Canada</li>
-								<!-- <li class="icon solid fa-phone">(000) 000-0000</li> -->
-								<li class="icon solid fa-envelope"><a href="mailto: bsinghkarman@gmail.com">bsinghkarman@gmail.com</a></li>
-								<li class="icon brands fa-github"><a href="https://github.com/bainskarman">bainskarman</a></li>
-								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/bainskarman/">@bainskarman</a></li>
-								<!-- <li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/jagpreet.singh.54390">Jagpreet Singh</a></li> -->
-								<!-- <li class="icon brands fa-instagram"><a href="https://www.instagram.com/jagpreet_singh_08/">Jagpreet Singh</a></li> -->
-							</ul>
-							<ul class="copyright">
-								<li>&copy;Karman Singh Bains All rights reserved.</li>
-							</ul>
-						</div>
-					</section>
+                <div class="section-header" onclick="toggleSection('project6')">TTC Delay Analysis and Forecasting</div>
+                <div id="project6" class="section-content">
+                    <p>The TTC Delay Analysis is a Streamlit application that shows analysis and forecasts the expected delay for TTC (Toronto Transit Commission) buses based on the current date, time, location, and selected route. The application utilizes pre-trained machine learning models for delay prediction.</p>
+                    <a href="https://ttcdelay.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                    <a href="https://github.com/bainskarman/projects/tree/main/TTC_Delay_Analysis" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
+                </div>
 
-			</div>
+                <div class="section-header" onclick="toggleSection('project7')">Uber Fare Estimation App</div>
+                <div id="project7" class="section-content">
+                    <p>A Streamlit application for estimating Uber ride fares based on user-provided pickup and dropoff coordinates, passenger count, and the current date and time.</p>
+                    <a href="https://ubercostestimation.streamlit.app/" class="special"><i class="fas fa-play icon-link"></i>Try the App</a>
+                    <a href="https://github.com/bainskarman/projects/tree/main/Uber_Fare_End_to_End" class="special"><i class="fab fa-github icon-link"></i>Learn more</a>
+                </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <div class="section-header" onclick="toggleSection('project8')">Power BI Projects</div>
+                <div id="project8" class="section-content">
+                    <p>Data Professional Survey Analysis using Power BI and Sales Report with Power BI and SQL.</p>
+                    <a href="https://app.powerbi.com/links/cEiqieuETu?ctid=b6417cd0-1f73-4471-9a39-20953822a34a&pbi_source=linkShare" class="special"><i class="fas fa-chart-bar icon-link"></i>Data Professional Survey</a>
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiOTg4ODViNzItMDczYi00NTMyLTgyM2MtY2I2OGYwZGZlMmQ5IiwidCI6ImI2NDE3Y2QwLTFmNzMtNDQ3MS05YTM5LTIwOTUzODIyYTM0YSIsImMiOjN9" class="special"><i class="fas fa-chart-bar icon-link"></i>Sales Report</a>
+                </div>
+            </div>
+        </section>
 
-	</body>
+        <!-- Contact Section -->
+        <section id="contact" class="wrapper style4">
+            <div class="inner">
+                <h2 class="major">Contact</h2>
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt icon-link"></i>Toronto, ON, Canada</li>
+                    <li><i class="fas fa-envelope icon-link"></i><a href="mailto:bsinghkarman@gmail.com">bsinghkarman@gmail.com</a></li>
+                    <li><i class="fab fa-github icon-link"></i><a href="https://github.com/bainskarman">GitHub</a></li>
+                    <li><i class="fab fa-linkedin icon-link"></i><a href="https://www.linkedin.com/in/bainskarman/">LinkedIn</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>
